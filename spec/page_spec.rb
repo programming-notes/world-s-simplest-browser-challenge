@@ -1,4 +1,4 @@
-require_relative 'page'
+require_relative '../page'
 
 describe "Page" do
 

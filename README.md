@@ -7,7 +7,23 @@
 - Identify and implement classes based on real world requirements
 - Create well-defined classes with a single responsibility
 
-##Summary
+## Summary
+In this challenge, we're going to build a simple command-line browser.  Users will enter the URL's they wish to visit, and our application will display simplified overviews of the pages.
+
+We'll use this challenge to increase our familiarity with how the web works.  Everything our program does, a browser has to do, too.  We'll need to make an HTTP request and receive a response.  After we get the response, we'll display it to the user.
+
+In addition to the technical challenges, this challenge also provides an opportunity to apply object-oriented design principles (e.g., [separation of concerns][]).
+
+
+### Net::HTTP and Nokogiri
+In order to get the HTML for a wepage, we need to make an [HTTP][wikipedia http] request—just like with a browser.  And, we need to do so with Ruby.  Fortunately, the Ruby Standard Library includes a library that makes this possible:  the `Net` module with it's `HTTP` class (i.e., `Net::HTTP`).
+
+To use this library, we need to require it (see Line 1 of the runner file).  But, how do we use `Net::HTTP` to make HTTP requests?  Part of this challenge is to explore this library to learn how to use it.  To begin, we can read through the usage examples in the [ruby docs][ruby net/http] and this [cheat sheet from Ruby Inside][ruby inside net/http].
+
+After we use `Net::HTTP` to get the contents of a webpage, we'll need to parse it to pull out the data we'll use to form our simplified overview.  We can use the [Nokogiri][] gem to do this; we should be familiar with Nokogiri from a [previous challenge][scraping hn challenge].
+
+
+### Release 0: Basic Toy Browser
 
 We're going to build the simplest web browser in the world.  It will work like this:
 
@@ -23,11 +39,6 @@ Links:
   etc..
 ```
 
-We'll be using Ruby's built-in [Net::HTTP](http://ruby-doc.org/stdlib-1.9.3//libdoc/net/http/rdoc/Net/HTTP.html) library to fetch the page and then using [Nokogiri](http://nokogiri.org/) to parse the HTML the page returns.
-
-We want you to start getting familiar with how the web works.  Everything your program does a browser has to do too.
-
-### Release 0: Basic Toy Browser
 
 #### Listing the Responsibilities
 
@@ -70,10 +81,16 @@ See browser.rb for where to put the "driver" code.  You should have a `Browser` 
 You should write tests for the Page object functionality in page_spec.rb
 
 ##Optimize Your Learning
-- Read up on [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns).
 - What responsibilities does your program have to fulfill?  What classes do you need to fulfill those responsibilities?
 - Where are the boundaries between the classes &mdash; how do they communicate with each other?
 
 ##Resources
-- [Net::HTTP](http://ruby-doc.org/stdlib-1.9.3/libdoc/net/http/rdoc/Net/HTTP.html)
-- [Net::HTTP cheatsheet](http://www.rubyinside.com/nethttp-cheat-sheet-2940.html)
+
+
+[nokogiri]: http://nokogiri.org
+[ruby net/http]: http://ruby-doc.org/stdlib-2.1.0//libdoc/net/http/rdoc/Net/HTTP.html
+[ruby inside net/http]: http://www.rubyinside.com/nethttp-cheat-sheet-2940.html
+[scraping hn challenge]: ../../../scraping-hn-1-building-objects-challenge
+[separation of concerns]: https://en.wikipedia.org/wiki/Separation_of_concerns
+[wikipedia http]: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+

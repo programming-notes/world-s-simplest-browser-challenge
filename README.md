@@ -59,22 +59,10 @@ Let's begin by building a `Page` class to represent our simplified version of a 
 *Note:* The provided tests only reflect behaviors related to the state of a `Page` object (e.g., its heading or url).  If we add any additional behaviors throughout the challenge, we'll need to add tests for those.
 
 
-### Release 1: Object-Oriented Browser
+### Release 1: Build the Object-oriented Browser
+With our `Page` class, we can successfully represent a web page in Ruby.  That's one piece of the puzzle.  We need to build the rest of the application.
 
-#### Create Custom Objects
-
-Start with a `Page` class that has the following requirements:
-
-- I can create my page by telling it what url I want to find.
-- I can call a method `fetch!` to retrieve the contents of the site at the url using an HTTP request
-- I can retrieve the url of the page via a method called url
-- I can retrieve all of the links on the page via a method `links` which returns an array of String objects.
-- I can retrieve the title of the page via a method `title`.
-
-
-See browser.rb for where to put the "driver" code.  You should have a `Browser` class that acts as the "brain" rather than lots of code living outside of a class.
-
-You should write tests for the Page object functionality in page_spec.rb
+To reiterate what our browser does, we'll prompt users to input a URL.  In the background, our browser will make an HTTP request and get a response back.  We'll work with the response and ultimately display an overview of the page (see Figure 1).  Then, users can enter another URL or they can exit the program.
 
 
 ##Resources

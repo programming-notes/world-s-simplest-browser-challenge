@@ -23,7 +23,7 @@ Links:
 ```
 *Figure 1*.  Example display of a web page in our command-line browser.
 
-In this challenge, we're going to build a simple command-line browser.  Users will enter the URL's they wish to visit, and our application will display simplified overviews of the pages (see Figure 1).
+In this challenge, we're going to build a simple command-line browser.  Users will enter URL's they wish to visit (one at a time), and our application will display simplified overviews of the pages (see Figure 1).
 
 We'll use this challenge to increase our familiarity with how the web works.  Everything our program does, a browser has to do, too.  We'll need to make an HTTP request and receive a response.  After we get the response, we'll display it to the user.
 

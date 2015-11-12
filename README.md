@@ -1,12 +1,5 @@
 # World's Simplest Browser
 
-##Learning Competencies
-
-- Use Net::HTTP to download and read html pages
-- Use the Nokogiri gem to parse CSS elements
-- Identify and implement classes based on real world requirements
-- Create well-defined classes with a single responsibility
-
 ## Summary
 In this challenge, we're going to build a simple command-line browser.  Users will enter the URL's they wish to visit, and our application will display simplified overviews of the pages.
 

@@ -51,7 +51,15 @@ Let's begin by listing all the responsibilities within our application.  Some ob
 With our list in place, let's consider how we're going to accomplish each of responsibilities.  What classes do we need to fulfill these responsibilities?  Where are the boundaries between the classes and how do they communicate with each other?
 
 
-### Release 0: Object-Oriented Browser
+### Release 0: Represent a Web Page in Ruby
+Figure 1 in the *Summary* gives us look at what information from a webpage our simple browser will display to users.  We can see that our browser will display the page's heading, its url, the number of characters in the page's text, and any links on the page.
+
+Let's begin by building a `Page` class to represent our simplified version of a web page.  Some tests have been written for us.
+
+*Note:* The provided tests only reflect behaviors related to the state of a `Page` object (e.g., its heading or url).  If we add any additional behaviors throughout the challenge, we'll need to add tests for those.
+
+
+### Release 1: Object-Oriented Browser
 
 #### Create Custom Objects
 

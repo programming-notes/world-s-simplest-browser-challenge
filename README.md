@@ -1,6 +1,28 @@
 # World's Simplest Browser
 
 ## Summary
+```
+Met the futurists: People who 'live in the future'
+http://www.cnn.com/2015/11/06/tech/pioneers-futurists/index.html
+
+Content length: 3972 characters.
+
+Links:
+- More stories about the future of science, tech and medicine
+  http://www.cnn.com/specials/tech/pioneers
+- Pioneers: Will gene "editing" change society as much as computers? 
+  http://www.cnn.com/2015/10/30/health/pioneers-crispr-dna-genome-editing/index.html
+- @thompatterson
+  https://twitter.com/thompatterson
+- Amy Webb writes 
+  https://www.linkedin.com/pulse/what-exactly-futurist-amy-webb
+- CNN.com/Pioneers.
+  http://www.cnn.com/specials/tech/pioneers
+- The future of asteroids: Way stations to Mars
+  http://www.cnn.com/2015/10/06/tech/asteroid-mining-nasa-mars-pioneers/index.html
+```
+*Figure 1*.  Example display of a web page in our command-line browser.
+
 In this challenge, we're going to build a simple command-line browser.  Users will enter the URL's they wish to visit, and our application will display simplified overviews of the pages.
 
 We'll use this challenge to increase our familiarity with how the web works.  Everything our program does, a browser has to do, too.  We'll need to make an HTTP request and receive a response.  After we get the response, we'll display it to the user.

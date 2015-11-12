@@ -2,7 +2,7 @@
 
 ## Summary
 ```
-Met the futurists: People who 'live in the future'
+Meet the futurists: People who 'live in the future'
 http://www.cnn.com/2015/11/06/tech/pioneers-futurists/index.html
 
 Content length: 3972 characters.

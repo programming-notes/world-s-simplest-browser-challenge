@@ -51,30 +51,7 @@ Let's begin by listing all the responsibilities within our application.  Some ob
 With our list in place, let's consider how we're going to accomplish each of responsibilities.  What classes do we need to fulfill these responsibilities?  Where are the boundaries between the classes and how do they communicate with each other?
 
 
-#### Listing the Responsibilities
-
-Start by listing the core responsibilities of your app.  Some of these responsibilities include:
-
-- Displaying a prompt for the user
-- Parsing user input
-- Fetching a web page
-- Extracting the relevant information from the web page
-- Displaying the relevant information in a user-friendly way
-- *etc.*
-
-There are more&mdash;make sure you list them out!  Next, group these responsibilities into "concerns".  Prompting a user for input and taking the appropriate action might be one concern, for example.  Fetching a URL and returning an easy-to-display data structure might be another.
-
-#### Toy Code
-
-Get familiar with the [Net::HTTP](http://ruby-doc.org/stdlib-1.9.3//libdoc/net/http/rdoc/Net/HTTP.html) module.  Here's a good [Net::HTTP cheatsheet](http://www.rubyinside.com/nethttp-cheat-sheet-2940.html) to help you.
-
-Write some toy code and fetch some web pages. Get your toy code to create the sample output shown in the initial example before moving on to Release 1.
-
-What kind of objects do `Net::HTTP` methods return?  Should your program expose those objects directly?
-
-**Hint:** No.  Wrap them up in objects that more directly express what your code *does* rather than how its implemented.
-
-### Release 1: Object-Oriented Browser
+### Release 0: Object-Oriented Browser
 
 #### Create Custom Objects
 

@@ -1,14 +1,14 @@
 require_relative '../page'
 
 describe Page do
-  let(:page) { Page.new(url: 'http://somedomain.com', title: 'Site Name', character_count: 500, links: ['http://anotherdomain.com', 'http://somedomain.com/register']) }
+  let(:page) { Page.new(url: 'http://somedomain.com', heading: 'First H1 Heading', character_count: 500, links: ['http://anotherdomain.com', 'http://somedomain.com/register']) }
 
   it 'has a url' do
     expect(page.url).to eq 'http://somedomain.com'
   end
 
-  it 'has a title' do
-    expect(page.title).to eq 'Site Name'
+  it 'has a heading' do
+    expect(page.title).to eq 'First H1 Heading'
   end
 
   it 'has a character count' do

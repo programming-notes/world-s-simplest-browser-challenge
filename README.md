@@ -39,21 +39,16 @@ After we use `Net::HTTP` to get the contents of a webpage, we'll need to parse i
 
 
 ## Releases
-### Release 0: Basic Toy Browser
+### Pre-release:  Delimit Responsibilities
+Let's begin by listing all the responsibilities within our application.  Some object is going to be responsible each of them.  An example list might include ...
 
-We're going to build the simplest web browser in the world.  It will work like this:
+- displaying a prompt for the user
+- parsing user input
+- fetching a web page
+- extracting the relevant information from the web page
+- displaying the relevant information in a user-friendly way
 
-```text
-$ ruby browser.rb
-url> http://www.cnn.com/2013/02/06/travel/private-jets/index.html
-Fetching...
-Title: 'Redneck' speed freak buys super-fast jet
-Content length: 10,123 characters
-Links:
-  http://whatever.com/something.html
-  etc..
-  etc..
-```
+With our list in place, let's consider how we're going to accomplish each of responsibilities.  What classes do we need to fulfill these responsibilities?  Where are the boundaries between the classes and how do they communicate with each other?
 
 
 #### Listing the Responsibilities
@@ -96,9 +91,6 @@ See browser.rb for where to put the "driver" code.  You should have a `Browser` 
 
 You should write tests for the Page object functionality in page_spec.rb
 
-##Optimize Your Learning
-- What responsibilities does your program have to fulfill?  What classes do you need to fulfill those responsibilities?
-- Where are the boundaries between the classes &mdash; how do they communicate with each other?
 
 ##Resources
 

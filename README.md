@@ -65,7 +65,8 @@ With our `Page` class, we can successfully represent a web page in Ruby.  That's
 To reiterate what our browser does, we'll prompt users to input a URL.  In the background, our browser will make an HTTP request and get a response back.  We'll work with the response and ultimately display an overview of the page (see Figure 1).  Then, users can enter another URL or they can exit the program.
 
 
-##Resources
+## Conclusion
+Have we been intentional in our design, thinking through our design decisions?  This challenge provides a great opportunity to practice applying object-oriented principles.  There are a number of separate concerns:  interfacing with the user, fetching data from the web, parsing HTML, etc.  This is an opportunity to practice building multiple classes that can work together, each with its own single responsibility.
 
 
 [nokogiri]: http://nokogiri.org

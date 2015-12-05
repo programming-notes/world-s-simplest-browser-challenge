@@ -10,11 +10,11 @@ Content length: 3972 characters.
 Links:
 - More stories about the future of science, tech and medicine
   http://www.cnn.com/specials/tech/pioneers
-- Pioneers: Will gene "editing" change society as much as computers? 
+- Pioneers: Will gene "editing" change society as much as computers?
   http://www.cnn.com/2015/10/30/health/pioneers-crispr-dna-genome-editing/index.html
 - @thompatterson
   https://twitter.com/thompatterson
-- Amy Webb writes 
+- Amy Webb writes
   https://www.linkedin.com/pulse/what-exactly-futurist-amy-webb
 - CNN.com/Pioneers.
   http://www.cnn.com/specials/tech/pioneers
@@ -23,7 +23,7 @@ Links:
 ```
 *Figure 1*.  Example display of a web page in our command-line browser.
 
-In this challenge, we're going to build a command-line application to fetch a webpage and display some of the information from the page.  Users will enter URL's they wish to visit (one at a time), and our application will display simplified overviews of the pages (see Figure 1).
+In this challenge, we're going to build a command-line application to fetch a webpage and display some of the information from the page.  Users will enter URLs they wish to visit (one at a time), and our application will display simplified overviews of the pages (see Figure 1).
 
 We'll use this challenge to increase our familiarity with how the web works.  Our program will function somewhat like a browser.  It will make an HTTP request and receive a response.  After we get the response, we'll display it to the user.
 

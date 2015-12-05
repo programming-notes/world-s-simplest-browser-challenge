@@ -33,7 +33,7 @@ In addition to the technical challenges, this challenge also provides an opportu
 ### Net::HTTP and Nokogiri
 In order to get the HTML for a wepage, we need to make an [HTTP][wikipedia http] request.  And, we need to do so with Ruby.  Fortunately, the Ruby Standard Library includes a library that makes this possible:  the `Net` module with its `HTTP` class (i.e., `Net::HTTP`).
 
-To use this library, we need to require it (see Line 1 of the runner file).  But, how do we use `Net::HTTP` to make HTTP requests?  What kind of object is created out of the response?  Part of this challenge is to explore this library to learn how to use it.  To begin, we can read through the usage examples in the [ruby docs][ruby net/http] and this [cheat sheet from Ruby Inside][ruby inside net/http].  This GitHub [repo][github net::http examples] provides more usage examples, including an example for [making a standard GET request][get request example].
+To use this library, we need to require it (see Line 1 of the runner file).  But, how do we use `Net::HTTP` to make HTTP requests?  What kind of object is created out of the response?  Part of this challenge is to explore this library to learn how to use it.  To begin, we can read through the usage examples in the [Ruby docs][ruby net/http] and this [cheat sheet from Ruby Inside][ruby inside net/http].  This GitHub [repo][github net::http examples] provides more usage examples, including an example for [making a standard GET request][get request example].
 
 Take time to read through and understand the examples.  Open IRB and run the code.  Explore the objects we'll be working with.
 

@@ -21,7 +21,7 @@ Links:
 - The future of asteroids: Way stations to Mars
   http://www.cnn.com/2015/10/06/tech/asteroid-mining-nasa-mars-pioneers/index.html
 ```
-*Figure 1*.  Example display of a web page in our command-line browser.
+*Figure 1*.  Example display of a web page in our command-line browser-like application.
 
 In this challenge, we're going to build a command-line application to fetch a webpage and display some of the information from the page.  Users will enter URLs they wish to visit (one at a time), and our application will display simplified overviews of the pages (see Figure 1).
 

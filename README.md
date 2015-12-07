@@ -54,7 +54,7 @@ With our list in place, let's consider how we're going to accomplish each of res
 
 
 ### Release 0: Represent a Web Page in Ruby
-Figure 1 in the *Summary* gives us a look at what information from a webpage our simple browser will display to users.  We can see that our browser will display the page's heading, its url, the number of characters in the page's text, and any links on the page.
+Figure 1 in the *Summary* gives us a look at what information from a webpage our simple browser will display to users.  We can see that our application will display the page's heading, its url, the number of characters in the page's text, and any links on the page.
 
 Let's begin by building a `Page` class to represent our simplified version of a web page.  Some tests have been written for us.
 

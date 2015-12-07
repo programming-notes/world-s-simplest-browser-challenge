@@ -10,11 +10,11 @@ Content length: 3972 characters.
 Links:
 - More stories about the future of science, tech and medicine
   http://www.cnn.com/specials/tech/pioneers
-- Pioneers: Will gene "editing" change society as much as computers? 
+- Pioneers: Will gene "editing" change society as much as computers?
   http://www.cnn.com/2015/10/30/health/pioneers-crispr-dna-genome-editing/index.html
 - @thompatterson
   https://twitter.com/thompatterson
-- Amy Webb writes 
+- Amy Webb writes
   https://www.linkedin.com/pulse/what-exactly-futurist-amy-webb
 - CNN.com/Pioneers.
   http://www.cnn.com/specials/tech/pioneers
@@ -23,7 +23,7 @@ Links:
 ```
 *Figure 1*.  Example display of a web page in our command-line browser.
 
-In this challenge, we're going to build a command-line application to fetch a webpage and display some of the information from the page.  Users will enter URL's they wish to visit (one at a time), and our application will display simplified overviews of the pages (see Figure 1).
+In this challenge, we're going to build a command-line application to fetch a webpage and display some of the information from the page.  Users will enter URLs they wish to visit (one at a time), and our application will display simplified overviews of the pages (see Figure 1).
 
 We'll use this challenge to increase our familiarity with how the web works.  Our program will function somewhat like a browser.  It will make an HTTP request and receive a response.  After we get the response, we'll display it to the user.
 
@@ -31,9 +31,9 @@ In addition to the technical challenges, this challenge also provides an opportu
 
 
 ### Net::HTTP and Nokogiri
-In order to get the HTML for a wepage, we need to make an [HTTP][wikipedia http] request.  And, we need to do so with Ruby.  Fortunately, the Ruby Standard Library includes a library that makes this possible:  the `Net` module with it's `HTTP` class (i.e., `Net::HTTP`).
+In order to get the HTML for a wepage, we need to make an [HTTP][wikipedia http] request.  And, we need to do so with Ruby.  Fortunately, the Ruby Standard Library includes a library that makes this possible:  the `Net` module with its `HTTP` class (i.e., `Net::HTTP`).
 
-To use this library, we need to require it (see Line 1 of the runner file).  But, how do we use `Net::HTTP` to make HTTP requests?  What kind of object is created out of the response?  Part of this challenge is to explore this library to learn how to use it.  To begin, we can read through the usage examples in the [ruby docs][ruby net/http] and this [cheat sheet from Ruby Inside][ruby inside net/http].  This GitHub [repo][github net::http examples] provides more usage examples, including an example for [making a standard GET request][get request example].
+To use this library, we need to require it (see Line 1 of the runner file).  But, how do we use `Net::HTTP` to make HTTP requests?  What kind of object is created out of the response?  Part of this challenge is to explore this library to learn how to use it.  To begin, we can read through the usage examples in the [Ruby docs][ruby net/http] and this [cheat sheet from Ruby Inside][ruby inside net/http].  This GitHub [repo][github net::http examples] provides more usage examples, including an example for [making a standard GET request][get request example].
 
 Take time to read through and understand the examples.  Open IRB and run the code.  Explore the objects we'll be working with.
 
@@ -54,7 +54,7 @@ With our list in place, let's consider how we're going to accomplish each of res
 
 
 ### Release 0: Represent a Web Page in Ruby
-Figure 1 in the *Summary* gives us look at what information from a webpage our simple browser will display to users.  We can see that our browser will display the page's heading, its url, the number of characters in the page's text, and any links on the page.
+Figure 1 in the *Summary* gives us a look at what information from a webpage our simple browser will display to users.  We can see that our browser will display the page's heading, its url, the number of characters in the page's text, and any links on the page.
 
 Let's begin by building a `Page` class to represent our simplified version of a web page.  Some tests have been written for us.
 
